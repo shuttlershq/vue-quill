@@ -6,7 +6,6 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
   ],
   parserOptions: {
@@ -14,7 +13,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  plugins: ['vue', '@typescript-eslint'],
+  plugins: ['vue'],
   ignorePatterns: ['docs', 'temp', '**/shims-vue.d.ts'],
   rules: {
     '@typescript-eslint/ban-types': 'off',
